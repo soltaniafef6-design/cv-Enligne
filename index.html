@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio Afef</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Afef<span class="dot">.</span></h1>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" aria-label="Basculer thème">🌓</button>
+        <button id="burger" class="burger" aria-label="Ouvrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Salut, je suis <strong>Afef</strong></h2>
+          <p>Créatrice de belles interfaces — portfolio créatif et coloré pour montrer mes projets.</p>
+          <a class="btn" href="#projects">Voir mes projets</a>
+        </div>
+        <div class="hero-image">
+          <img src="img/profil.svg" alt="Afef - profil">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>À propos de moi</h2>
+        <div class="about-grid">
+          <p>Je suis passionnée par le design web, le code et les couleurs. J'aime expérimenter des mises en page créatives et résoudre des problèmes d'interface.</p>
+          <ul>
+            <li>Front-end : HTML, CSS, JavaScript</li>
+            <li>Design : UI, responsive, animations CSS</li>
+            <li>Versioning : Git / GitLab</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Responsive</div>
+          <div class="skill">Git / GitLab</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projets</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <img src="img/projet1.svg" alt="Projet 1">
+            <div class="card-body">
+              <h3>Galerie Colorée</h3>
+              <p>Une galerie responsive avec des animations de survol et des cartes colorées.</p>
+              <a class="card-link" href="#">Voir le projet</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/projet2.svg" alt="Projet 2">
+            <div class="card-body">
+              <h3>Landing Créative</h3>
+              <p>Landing page pour une startup fictive, axée sur l'UX et le contraste coloré.</p>
+              <a class="card-link" href="#">Voir le projet</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" onsubmit="alert('Formulaire de contact — exemple local.'); return false;">
+          <input type="text" name="name" placeholder="Ton nom" required>
+          <input type="email" name="email" placeholder="Ton email" required>
+          <textarea name="message" rows="4" placeholder="Ton message"></textarea>
+          <button class="btn" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Afef — Portfolio créatif</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
